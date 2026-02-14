@@ -1,0 +1,110 @@
+/* 1. RESET (Tarayıcı varsayılanlarını sıfırla) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. GÖVDE (Arka Plan ve Ortalama) */
+body {
+    background-color: #f0f2f5; /* Hafif gri arka plan */
+    height: 100vh; /* Ekranın tamamını kapla */
+    display: flex; /* Flexbox aç */
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+}
+
+/* 3. KART TASARIMI */
+.randevu-kutusu {
+    background: white;
+    width: 100%;
+    max-width: 500px; /* Asla 500px'ten geniş olmasın */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Havalı gölge */
+}
+
+/* 4. BAŞLIK */
+.randevu-kutusu-basligi {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+.randevu-kutusu-basligi i {
+    font-size: 3rem;
+    color: #3498db; /* Ana Renk */
+    margin-bottom: 10px;
+}
+.randevu-kutusu-basligi p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* 5. FORM ELEMANLARI */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+    font-weight: 600;
+}
+
+/* İkonlu Input Yapısı */
+.input-kabi {
+    position: relative;
+}
+.input-kabi i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #95a5a6;
+}
+.input-kabi input {
+    padding-left: 40px; /* İkon için yer aç */
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* Odaklanınca renk değişsin */
+input:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* 6. YAN YANA DURANLAR (Poliklinik & Doktor) */
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+.half {
+    flex: 1; /* Eşit genişlikte bölüşün */
+}
+
+/* 7. BUTON */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #468fbf;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.submit-btn:hover {
+    background-color: #2980b9;
+}
