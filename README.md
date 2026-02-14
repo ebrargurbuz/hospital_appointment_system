@@ -22,4 +22,4 @@ Bu proje, Frontend ve Backend geliştirme süreçlerini beraber yürüttüğüm�
 
 Backend & Veritabanı: Ebrar Gürbüz (https://github.com/ebrargurbuz)
 
-Frontend & Tasarım: Eren Könür (https://github.com/erenkonur)
+Frontend & Tasarım: Eren Könür (https://github.com/erenkonurr)
